@@ -9,7 +9,7 @@ This demo uses zsh, vim and dropbox, but don't panic, that's just me. `notes` wi
 
 You already have a tool that backs up and syncs your data (be it Dropbox, iCloud, Seafile or whatever). You already have a text editor on your desktop, your laptops, your phone and that tablet you've forgotten about.
 
-You want to take notes. 
+You want to take notes.
 
 You could use a web X.0 note taking app that reimplements all of that from scratch (poorly). You could tie yourself to a tool that holds all your data for you in its own brand-new format, locks you into its (often bloated) UI, and then steadily removes features unless you start paying (hey Evernote). You don't have to.
 
@@ -43,6 +43,10 @@ Searches note filenames and paths for the given string, and returns all the matc
 
 Searches all note content for the given string and returns all the matches. Shorthand alias also available with `notes g`.
 
+### `notes search <part-of-a-note-name-or-note-content>`
+
+Searches all note content and note filenames for the given string and returns all the matches. Shorthand alias also available with `notes s`.
+
 ### `notes open`
 
 Opens your notes folder in your default configured file explorer. Shorthand alias also available with `notes o`.
@@ -63,7 +67,7 @@ Combine these together! This opens each matching note in your `$EDITOR` in turn.
 
 All the above works. Here's what's coming next:
 
-- [ ] Combining find and grep, to match either one
+- [x] Combining find and grep, to match either one
 - [ ] More interesting and nicer looking file/grep search result formatting (...only when not piping?)
 - [ ] Make the file extension optional
 - [ ] Bash/zsh command autocompletion
